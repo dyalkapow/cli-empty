@@ -122,7 +122,7 @@ export default {
             appointmentDate: '',
             meetPerson: null,
             contactPhone: null,
-            offerType: 'trainee',
+            offerType: 'trainee'
 
          },
          link:{
@@ -174,8 +174,6 @@ export default {
       } else {
          console.log('ERROR');
       }
-
-      console.log(HOST_URL);
    }
 }
 </script>
@@ -252,46 +250,6 @@ $lime-green: #55af2a;
             text-shadow: 0 0 10px #fff;
             transition: .5s ease;
         }
-    }
-}
-
-.text {
-    margin: 20px auto;
-    line-height: 30px;
-    word-spacing: 3px;
-    cursor: default;
-    color: #fff;
-    
-    a {
-        color: #55AF2A;
-        text-decoration: none;
-        border-bottom: 2px dashed #fff;
-    }
-}
-
-.offer {
-    background:$bg-color;
-    width: 60%;
-    text-align: left;
-    padding: 20px;
-    box-shadow: 0 0 25px 2px #ccc;
-    border-radius: 10px;
-    position: relative;
-    margin: 50px auto;
-    overflow: hidden;
-    font-size: 20px;
-
-    &::before {
-        content: '';
-        position: absolute;
-        top: -1px;
-        right: -1px;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 50px 50px 0;
-        border-color: transparent #55AF2A transparent transparent;
-
     }
 }
 
