@@ -55,7 +55,6 @@ export default {
    mounted() {
       this.GET_VALUE_FROM_API(this.id)
 
-      this.pushTo('https://www.freshlimesoft.com')
    },
    methods: {
       ...mapActions([

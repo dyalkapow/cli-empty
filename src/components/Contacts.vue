@@ -2,7 +2,7 @@
     <ul class="contacts">
         <li>С уважением,</li>
         <li><a href="https://www.freshlimesoft.com">Fresh Lime Soft</a></li>   
-        <li><a :href="'tel:' + phone">{{phone}}</a></li>   
+        <li><a :href="'tel:' + NEW_INPUTS.HRcontactPhone || phone">{{NEW_INPUTS.HRcontactPhone || phone}}</a></li>   
 
         <li class="social">
             <a href="https://web.facebook.com/Fresh-Lime-Soft-LLC-1076470329199224/" target="_blanc">
@@ -43,12 +43,9 @@ export default {
     },
     computed: {
         ...mapGetters([
-            'HR_CONTACT_PHONE'
+            'NEW_INPUTS'
         ])
     },
-    // mounted() {
-    //     console.log(this.HR_CONTACT_PHONE);
-    // },
 }
 </script>
 

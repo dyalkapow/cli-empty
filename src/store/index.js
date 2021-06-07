@@ -1,8 +1,8 @@
 import { createStore } from 'vuex'
 import axios from 'axios'
 
-const HOST_URL = 'http://localhost:9000'
-// const HOST_URL = 'http://3.122.249.144:9000'
+// const HOST_URL = 'http://localhost:9000'
+const HOST_URL = 'http://3.122.249.144:9000'
 
 const store = {
   state: {
@@ -96,7 +96,8 @@ const store = {
                 appointmentDate: inputs.appointmentDate,
                 meetPerson: inputs.meetPerson,
                 contactPhone: inputs.contactPhone,
-                offerType: inputs.offerType
+                offerType: inputs.offerType,
+                HRcontactPhone: localStorage.getItem('phone')
             },
             {
                 headers:{
@@ -120,6 +121,7 @@ const store = {
             })
             .then(res => {
                 commit('GET_VALUE_FROM_API', res.data)
+                console.log(res.data);
             },
             )
             .catch(err => {

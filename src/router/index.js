@@ -5,7 +5,10 @@ const routes = [
     {
       path: "/",
       name: "home",
-      component: Home
+      component: Home,
+      beforeEnter(to, from, next) {
+        window.location.href = "https://freshlimesoft.com";
+      }
     },
     {
       path: "/offer/:id",
